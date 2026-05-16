@@ -35,6 +35,6 @@ app.get('/api/payments', (req, res) => {
   res.json(payments);
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`PayPerPrompt running on port ${process.env.PORT}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`PayPerPrompt running on port ${process.env.PORT || 3000}`);
 });
